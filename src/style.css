@@ -30,11 +30,7 @@ body {
   line-height: 1;
   border-radius: 5px;
 }
-.current-weather {
-  display: flex;
-  justify-content: space-between;
-  text-align: left;
-}
+
 .current-city {
   font-size: 64px;
   font-weight: 900;
@@ -57,10 +53,7 @@ body {
   font-size: 48px;
 }
 
-.current-weather {
-  display: flexbox;
-  justify-content: space-between;
-}
+
 
 .current-temperature-icon {
   position: relative;
