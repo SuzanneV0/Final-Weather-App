@@ -3,15 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Weather by Hills</title>
   </head>
   <body>
-    <h1>Hello World</h1>
+    <div class="weather-app">
+      <header>
+        <form id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-input"
+            id="search-input"
+          />
+          <input type="submit" value="Search" class="search-button" />
+        </form>
+      </header>
+      <main>
+        <div id="current-weather">
+          <h1 class="current-city" id="current-city">Toronto</h1>
+          <p class="current-details">
+            <span class="current-date" id="current-date"></span>, sunny
+            <br />
+           <div class="current-details"> Humidity: <strong> 87%</strong>, Wind:
+              <strong> 7.2km/hr</strong></div>
+          </p>
+        </div>
+        <div class="current-temperature">
+          <span class="current-temperature-icon">☀️</span>
+          <span class="current-temperature-value">24</span>
+          <span class="current-temperature-unit">°C</span>
+        </div>
+      </main>
     <footer>
       Coded by <a href="https://github.com/SuzanneV0">Suzanne Hills</a>, is
       open-sourced on
       <a href="https://github.com/SuzanneV0/Final-Weather-App">GitHub</a> and
       hosted on <a href="https://weatherxhills.netlify.app/">Netlify</a>
     </footer>
+ </div>
   </body>
 </html>
