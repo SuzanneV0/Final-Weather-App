@@ -52,8 +52,35 @@ function handleSearchSubmit(event) {
 
   searchCity(searchInput.value);
 }
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `
+  <div class="weather-forecast">
+            <div class="row">
+              <div class="col-2">
+                <div class="weather-forecast-date">${day}</div>
+                <div class="weather-forecast-icon">☁️</div>
+                <div class="weather-forecast-temperature">
+                  <span><strong>15°C</strong></span> | <span>9°C</span> </div>
+                
+              </div>
+            </div>
+            </div>
+            `;
+  });
+
+  forecastElement.innerHTML = forecastHtml;
+}
 
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Toronto");
+displayForecast();
