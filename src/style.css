@@ -45,7 +45,7 @@ body {
   display: flex;
   float: left;
   padding-top: 30px;
-  padding-left: 30px;
+  padding-left: 20px;
 }
 
 .current-details strong {
