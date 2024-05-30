@@ -68,7 +68,7 @@ function displayForecast() {
                 <div class="weather-forecast-date">${day}</div>
                 <div class="weather-forecast-icon">☁️</div>
                 <div class="weather-forecast-temperature">
-                  <span><strong>15°C</strong></span> | <span>9°C</span> </div>
+                  <span class="forecast-high">15°C</span> <span class="divider"> | </span> <span class="forecast-low">9°C</span> </div>
                 
               </div>
             </div>

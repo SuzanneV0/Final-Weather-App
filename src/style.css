@@ -89,10 +89,25 @@ body {
 }
 .weather-forecast-date {
   font-size: 18;
-  color: #403d58;
-  font-weight: bold;
+  color: rgba(39, 33, 66, 0.4);
+  font-weight: 400;
+  text-align: center;
+}
+.weather-forecast-icon {
+  text-align: center;
 }
 
+.forecast-high {
+  color: #fc7753;
+}
+
+.forecast-low {
+  color: #403d58;
+}
+
+.divider {
+  color: rgba(39, 33, 66, 0.4);
+}
 a {
   color: #fc7753;
 }
